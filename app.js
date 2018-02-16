@@ -5,6 +5,8 @@ const log4js = require('log4js');
 const logger = log4js.getLogger();
 logger.level = 'debug';
 
+
+
 http.createServer((request, response) => {
   fs.readFile('./index.html', (err, html) => {
     logger.info("Conexón a la aplicación.");
